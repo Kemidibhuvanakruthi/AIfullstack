@@ -7,17 +7,17 @@ while True:
         model="llama3.2:3b",
         messages=[
 
-        {
-           "role":"system",
- 	        "content": "Give the answers in 2-3 lines only"
+            {
+                "role":"system",
+ 	            "content": "Give the answers in 2-3 lines only"
      
-	    },
+	        },
 
-        {
-           "role":"user",
- 	        "content": question
+            {
+                "role":"user",
+ 	            "content": question
      
-	    }
-            ]
-    )
+	        }
+                ]
+        )
     print(response["message"]["content"])
